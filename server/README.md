@@ -10,8 +10,8 @@ To create a database online you can find instructions [here](https://www.mongodb
 ## Environment Variables
 
 * **NAME** - name of project, examle: SpaceX Dragons
-* **URL** - url where you are going to deploy the application, examle: http://localhost:5000
-* **CLIENT_URL** - url of client-side, examle: http://localhost:3000
+* **URL** - URL where you are going to deploy the application, examle: http://localhost:5000
+* **CLIENT_URL** - URL of client-side, examle: http://localhost:3000
 * **PORT** - port
 * **DB_URL** - MongoDB connection string
 * **JWT_ACCESS_KEY** - key for access token
@@ -20,6 +20,13 @@ To create a database online you can find instructions [here](https://www.mongodb
 * **SMTP_PORT** - port to send e-mail
 * **SMTP_USER** - user to send e-mail
 * **SMTP_PASSWORD** - password to send e-mail
+
+## Deployment
+
+Ready to deploy on [Vercel](https://vercel.com).
+[How to deploy on Vercel](https://vercel.com/docs/concepts/deployments/overview)
+
+Command to run app with Node.js: **npm run start**
 
 ## API endpoints
 

@@ -31,4 +31,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Environment Variables
 
-* **REACT_APP_API_URL** - url to server-side API endpoints, examle: http://localhost:5000/api
+* **REACT_APP_API_URL** - URL to server-side API endpoints, examle: http://localhost:5000/api
