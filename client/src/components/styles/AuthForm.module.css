@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container>* {
+    margin-bottom: 10px;
+}
+
+.container>*:last-child {
+    margin-bottom: 0;
+}
+
+.controls {
+    align-self: flex-end;
+}
+
+.controls>* {
+    margin-left: 10px;
+}
+
+.controls>*:first-child {
+    margin-left: 0;
+}
+
+.signup {
+    cursor: pointer;
+}
+
+.signup:hover {
+    color: #4d026b;
+}
+
+.error {
+    color: #b60000;
+}

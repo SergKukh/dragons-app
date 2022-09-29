@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+}
+
+.container>div {
+    position: absolute;
+    height: 24px;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.element {
+    padding: 8px 35px 8px 15px;
+    font-size: 1rem;
+}
+
+.element:focus {
+   outline-color: #4d026b;
+}

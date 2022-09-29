@@ -1,0 +1,52 @@
+.container {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #000000e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.hide {
+    max-height: none;
+    animation: hide 0.5s forwards;
+}
+
+.active {
+    animation: show 0.5s forwards;
+}
+
+.item {
+    color: #faffb8;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #f1ebff;
+}
+
+.red {
+    color: #ff6565;
+}
+
+@keyframes show {
+    from {height: 0%;}
+    to {height: 100%;}
+}
+
+@keyframes hide {
+    from {height: 100%;}
+    to {height: 0%;}
+}

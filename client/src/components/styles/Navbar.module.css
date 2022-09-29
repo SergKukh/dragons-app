@@ -1,0 +1,96 @@
+.container {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    background-color: #333333;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user {
+    color: #fff;
+    cursor: pointer;
+}
+
+.user:hover {
+    color: #dadada;
+}
+
+.activation {
+    color: #ff9797;
+    display: flex;
+    align-items: center;
+}
+
+.barside {
+    display: flex;
+    align-items: center;
+}
+
+.barside>* {
+    margin-right: 10px;
+}
+
+.barside>*:last-child {
+    margin-right: 0;
+}
+
+.burgerBtn {
+    position: relative;
+    height: 30px;
+    width: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.burgerBtn::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 40px;
+    background-color: #fff;
+    top: 0;
+    transition: all 0.3s ease-in;
+}
+
+.burgerBtn::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 40px;
+    background-color: #fff;
+    bottom: 0;
+    transition: all 0.3s ease-in;
+}
+
+.burgerBtn>span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 40px;
+    background-color: #fff;
+}
+
+.burgerActive>span {
+    display: none;
+}
+
+.burgerActive::before {
+    top: 50%;
+    transform: rotate(45deg) translate(0, -2px);
+}
+
+.burgerActive::after {
+    bottom: 50%;
+    transform: rotate(-45deg) translate(0, 2px);
+}
+
+@media (max-width: 700px) {
+    .container {
+        justify-content: flex-end;
+    }
+}

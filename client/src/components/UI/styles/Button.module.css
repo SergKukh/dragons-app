@@ -1,0 +1,29 @@
+.btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 1px solid #4d026b;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border-radius: 5px;
+}
+
+.light {
+    background: none;
+    color: #4d026b; 
+}
+
+.light:hover {
+    background-color: #4d026b;
+    color: #fff;
+}
+
+.dark {
+    background: none;
+    border-color: #e091ff;
+    color: #e091ff; 
+}
+
+.dark:hover {
+    background: #e091ff;
+    color: #000;
+}

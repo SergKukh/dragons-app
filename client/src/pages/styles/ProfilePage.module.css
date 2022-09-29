@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    max-width: 90%;
+    margin: auto;
+}
+
+.activate {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activate>div:first-child {
+    color: #9b0000;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.activate>div:last-child {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.activate>div:last-child:hover {
+    color: #005230;
+    fill: #005230;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.email>form {
+    display: flex;
+}
+
+.email>form>button, .email>button {
+    margin-left: 10px;
+}
+
+.modalEmail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalEmail>div {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+
+.modalEmail>div>button:last-child {
+    margin-left: 10px;
+}

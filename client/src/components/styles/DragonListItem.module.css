@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.carousel {
+    min-width: 250px;
+    min-height: 200px;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #1c00b8
+}
+
+.name:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 675px) {
+    .carousel {
+        min-width: 200px;
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .carousel {
+        height: 200px;
+    }
+}

@@ -1,0 +1,14 @@
+.container {
+    padding: 1rem 0;
+    width: 90%;
+    margin: auto;
+    transition: transform 0.5s;
+}
+
+.list>div {
+    margin-bottom: 10px;
+}
+
+.container>div:last-child {
+    margin-bottom: 0;
+}

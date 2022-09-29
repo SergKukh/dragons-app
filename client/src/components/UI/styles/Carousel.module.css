@@ -1,0 +1,63 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: opacity 0.5s;
+}
+
+.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #3a3a3a7c;
+    padding: 10px;
+    user-select: none;
+    border-radius: 5px;
+    line-height: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: #000;
+}
+
+.container:hover .prev {
+    transform: translate(0%, -50%);
+    margin-left: 5px;
+}
+
+.container:hover .next {
+    transform: translate(0%, -50%);
+    margin-right: 5px;
+}
+
+.prev {
+    margin-left: 0px;
+    transform: translate(-100%, -50%);
+}
+
+.next {
+    right: 0;
+    transform: translate(100%, -50%);
+    margin-right: 0px;
+}
+
+@keyframes opacity {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
