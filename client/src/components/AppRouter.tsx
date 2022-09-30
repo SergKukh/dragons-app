@@ -10,13 +10,13 @@ const AppRouter: FC = () => {
         isAuth ?
             <Routes>
                 {privateRoutes.map(route =>
-                    <Route path={route.path} element={route.element} key={route.path} />)}
+                    <Route path={route.path} element={route.element()} key={route.path} />)}
                 <Route path="*" element={<Navigate to={RouteNames.DRAGON_LIST} replace />} />
             </Routes>
             :
             <Routes>
                 {publicRoutes.map(route =>
-                    <Route path={route.path} element={route.element} key={route.path} />)}
+                    <Route path={route.path} element={route.element()} key={route.path} />)}
                 <Route path="*" element={<Navigate to={RouteNames.AUTH} replace />} />
             </Routes>
     );

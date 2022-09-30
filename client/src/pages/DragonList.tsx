@@ -1,4 +1,4 @@
-import { FC, useState, useEffect, useRef, TouchEvent } from 'react';
+import { FC, useState, useEffect } from 'react';
 import DragonsService from '../api/DragonsService';
 import DragonListItem from '../components/DragonListItem';
 import Loader from '../components/UI/Loader';
@@ -27,7 +27,11 @@ const DragonList: FC = () => {
             <PullToRefresh onRefresh={fetchDragons}>
                 <div className={styles.list}>
                     {dragons.map(dragon =>
-                        <DragonListItem dragon={dragon} key={dragon.id} />)}
+                        <DragonListItem
+                            dragon={dragon}
+                            key={dragon.id}
+                        />
+                    )}
                 </div>
             </PullToRefresh>
         </div>

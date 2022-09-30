@@ -1,4 +1,4 @@
-import { getOneStoragedDragon, storageDragons } from "./data"
+import { getOneStoragedDragon, storageDragons } from "../../utils/data"
 
 describe('data', () => {
     test('getOneStoragedDragon', () => {

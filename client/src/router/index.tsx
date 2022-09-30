@@ -7,7 +7,7 @@ import ProfilePage from "../pages/ProfilePage";
 
 export interface IRoute {
     path: string
-    element: ReactNode
+    element: () => ReactNode
 }
 
 export enum RouteNames {
@@ -19,12 +19,12 @@ export enum RouteNames {
 }
 
 export const publicRoutes: IRoute[] = [
-    { path: RouteNames.AUTH, element: <AuthPage /> }
+    { path: RouteNames.AUTH, element: () => <AuthPage /> }
 ]
 
 export const privateRoutes: IRoute[] = [
-    { path: RouteNames.PROFILE, element: <ProfilePage /> },
-    { path: RouteNames.DRAGON, element: <DragonPage /> },
-    { path: RouteNames.DRAGON_LIST, element: <DragonList /> },
-    { path: RouteNames.FAVOURITES, element: <Favourites /> }
+    { path: RouteNames.PROFILE, element: () => <ProfilePage /> },
+    { path: RouteNames.DRAGON, element: () => <DragonPage /> },
+    { path: RouteNames.DRAGON_LIST, element: () => <DragonList /> },
+    { path: RouteNames.FAVOURITES, element: () => <Favourites /> }
 ]

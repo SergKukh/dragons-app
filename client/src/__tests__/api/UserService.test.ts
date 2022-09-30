@@ -1,5 +1,5 @@
 import mockAxios from 'jest-mock-axios';
-import UserService from './UserService';
+import UserService from '../../api/UserService';
 
 describe('users', () => {
     afterEach(() => {

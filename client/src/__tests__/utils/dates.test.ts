@@ -1,4 +1,4 @@
-import { formatDate } from "./dates"
+import { formatDate } from "../../utils/dates"
 
 describe('dates', () => {
     test('formatDate', () => {

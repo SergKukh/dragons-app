@@ -1,5 +1,5 @@
 import mockAxios from 'jest-mock-axios';
-import DragonsService, { url } from './DragonsService';
+import DragonsService, { url } from '../../api/DragonsService';
 
 describe('dragons', () => {
     afterEach(() => {
