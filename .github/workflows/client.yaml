@@ -13,20 +13,21 @@ jobs:
       run:
         working-directory: client
     strategy:
-      martrix:
+      matrix:
         node-version: [ 17.x ]
     steps:
       - uses: actions/checkout@v3
-      - name: Staring Node.js ${{ matrix.node-version }}
-        with:
-          node-version: ${{ matrix.node-version }}
       - uses: dorny/paths-filter@v2
         id: filter
         with:
           filters: |
             client:
-              - 'client/**'  
-        uses: action/setup-node@v3
+              - 'client/**'
+      - name: Staring Node.js ${{ matrix.node-version }}
+        if: steps.filter.outputs.client == 'true'
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}    
       - name: install modules
         if: steps.filter.outputs.client == 'true'
         run: npm install
