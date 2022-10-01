@@ -29,6 +29,11 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+## Test user
+
+* **login**: fehav87395@civikli.com
+* **password**: test123
+
 ## Environment Variables
 
 * **REACT_APP_API_URL** - URL to server-side API endpoints, examle: http://localhost:5000/api
