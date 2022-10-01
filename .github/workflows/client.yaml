@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  build_client:
-    name: Build client
+  run_tests:
+    name: Tests
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -31,9 +31,6 @@ jobs:
       - name: install modules
         if: steps.filter.outputs.client == 'true'
         run: npm install
-      - name: build project
-        if: steps.filter.outputs.client == 'true'
-        run: npm build
       - name: tests
         if: steps.filter.outputs.client == 'true'
-        run: npm test
+        run: npm run test
