@@ -35,6 +35,7 @@ const BurgerMenuList: FC<BurgerMenuListProps> = ({ isActive, items, closeHandler
                 <div className={styles.item}
                     onClick={item.handler}
                     key={item.title}
+                    data-testid='burger_menu_item'
                 >
                     {item.title}
                 </div>)}

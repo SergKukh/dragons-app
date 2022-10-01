@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`burger menu items 1`] = `
+Array [
+  <div
+    class="item"
+    data-testid="burger_menu_item"
+  >
+    1
+  </div>,
+  <div
+    class="item"
+    data-testid="burger_menu_item"
+  >
+    2
+  </div>,
+  <div
+    class="item"
+    data-testid="burger_menu_item"
+  >
+    3
+  </div>,
+]
+`;
